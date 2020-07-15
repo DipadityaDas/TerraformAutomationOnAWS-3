@@ -5,6 +5,6 @@ resource "null_resource" "StartBrowsing" {
 	]
 	
 	provisioner "local-exec" {
-		command = "start chrome ${aws_instance.web.public_ip} "
+		command = "start msedge ${aws_instance.web.public_ip} "
 	}
 }
